@@ -66,7 +66,7 @@ module.exports = {
     // 用于构建生产环境代码的相关配置信息
     NODE_ENV: 'production',
     assetsRoot: resolve('./reports-demo'), // 打包后的文件绝对路径（物理路径）
-    assetsPublicPath: 'https://aisuda.github.io/amis-editor-demo/reports-demo/', // 设置静态资源的引用路径（根域名+路径）
+    assetsPublicPath: 'https://wibetter.github.io/amis-editor-demo/reports-demo/', // 设置静态资源的引用路径（根域名+路径）
     assetsSubDirectory: '', // 资源引用二级路径
     productionSourceMap: false,
     productionGzip: false,

@@ -10,6 +10,7 @@ amis 可视化编辑器, 在线体验：https://aisuda.github.io/amis-editor-dem
 3. `npm run dev` 等编译完成后本地打开页面看效果。
 
 ## 历史版本预览地址
+1. [报表示例(amis-editor 6.7.0 / amis-reports 1.5.13)](https://wibetter.github.io/amis-editor-demo/reports-demo/index.html)
 1. [6.7.0(2024.08.06)](https://aisuda.github.io/amis-editor-demo/demo-6.7.0/index.html)
 2. [6.0.0(2023.12.29)](https://aisuda.github.io/amis-editor-demo/demo-6.0.0/index.html)
 3. [5.6.2(2023.10.31)](https://aisuda.github.io/amis-editor-demo/demo-5.6.2/index.html)
@@ -20,6 +21,8 @@ amis 可视化编辑器, 在线体验：https://aisuda.github.io/amis-editor-dem
 8. [4.0.2-beta.10(2022.02.23)](https://aisuda.github.io/amis-editor-demo/demo-4.0.2-beta.10/index.html)
 9. [3.3.5(2021-08-12)](https://aisuda.github.io/amis-editor-demo/demo-3.3.5/index.html)
 
+## 报表使用说明
+[amis-reports 使用说明](https://www.npmjs.com/package/amis-reports?activeTab=readme)
 
 ## 在其他项目中使用 amis-editor
 
