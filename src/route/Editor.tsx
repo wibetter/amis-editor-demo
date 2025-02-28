@@ -1,5 +1,9 @@
 import React from 'react';
 import {Editor, ShortcutKey} from 'amis-editor';
+// @ts-ignore
+// import reportPlugins from 'amis-reports'; // 报表插件-引入方式1（此引入方式含渲染器）
+// 导入报表组件插件列表-引入方式2（此引入方式仅含报表插件）
+import reportPlugins from 'amis-reports/lib/plugins';
 import {inject, observer} from 'mobx-react';
 import {RouteComponentProps} from 'react-router-dom';
 import {toast, Select} from 'amis';
@@ -9,6 +13,9 @@ import {IMainStore} from '../store';
 import '../editor/DisabledEditorPlugin'; // 用于隐藏一些不需要的Editor预置组件
 import '../renderer/MyRenderer';
 import '../editor/MyRenderer';
+// 引入报表渲染器，确保页面能正常渲染报表组件
+import 'amis-reports/lib/renderers';
+import 'amis-reports/lib/renderers.css';
 
 let currentIndex = -1;
 
@@ -135,6 +142,9 @@ export default inject('store')(
             className="is-fixed"
             $schemaUrl={schemaUrl}
             showCustomRenderersPanel={true}
+            plugins={[
+              ...reportPlugins, // 报表插件
+            ]}
             amisEnv={{
               fetcher: store.fetcher,
               notify: store.notify,

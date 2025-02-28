@@ -5,6 +5,9 @@ import {getEnv} from 'mobx-state-tree';
 import {IMainStore} from '../store';
 import qs from 'qs';
 import {render as amisRender, utils, filter} from 'amis';
+// 引入报表渲染器，确保页面能正常渲染报表组件
+// import 'amis-reports/lib/renderers';
+// import 'amis-reports/lib/renderers.css';
 
 export function schema2component(
   schema: any,
