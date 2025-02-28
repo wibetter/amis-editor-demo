@@ -18,7 +18,7 @@ object-assign
  * amis-editor-demo v1.0.0
  * author: fex
  * build tool: AKFun
- * build time: Sat Mar 01 2025 00:44:40 GMT+0800 (中国标准时间)
+ * build time: Sat Mar 01 2025 00:59:10 GMT+0800 (中国标准时间)
  * build tool info: https://github.com/wibetter/akfun
  */
 
