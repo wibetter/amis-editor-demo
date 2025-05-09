@@ -1,10 +1,22 @@
 import {types, getEnv, applySnapshot, getSnapshot} from 'mobx-state-tree';
 import {PageStore} from './Page';
 import {when, reaction} from 'mobx';
+
+// @ts-ignore
+import pageSchema from '../mock/pageSchema';
+
 let pagIndex = 1;
+
 export const MainStore = types
   .model('MainStore', {
     pages: types.optional(types.array(PageStore), [
+      {
+        id: `${pagIndex}`,
+        path: 'amis-reports',
+        label: '大屏报表示例',
+        icon: 'fa fa-file',
+        schema: pageSchema
+      },
       {
         id: `${pagIndex}`,
         path: 'hello-world',

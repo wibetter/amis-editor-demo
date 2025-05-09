@@ -15,6 +15,9 @@ import {setDefaultTheme} from 'amis';
 import {setThemeConfig} from 'amis-editor-core';
 import themeConfig from 'amis-theme-editor-helper/lib/systemTheme/cxd';
 
+// 支持本地mock数据
+import './mock/index';
+
 setDefaultTheme('cxd');
 setThemeConfig(themeConfig);
 

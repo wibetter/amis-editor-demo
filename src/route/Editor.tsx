@@ -13,6 +13,7 @@ import {IMainStore} from '../store';
 import '../editor/DisabledEditorPlugin'; // 用于隐藏一些不需要的Editor预置组件
 import '../renderer/MyRenderer';
 import '../editor/MyRenderer';
+
 // 引入报表渲染器，确保页面能正常渲染报表组件
 import 'amis-reports/lib/renderers';
 import 'amis-reports/lib/renderers.css';

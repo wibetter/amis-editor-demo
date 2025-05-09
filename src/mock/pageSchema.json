@@ -1,0 +1,2944 @@
+{
+  "type": "container",
+  "body": [
+    {
+      "type": "flex",
+      "style": {
+        "position": "relative",
+        "flex": "1 1 auto",
+        "flexGrow": 1,
+        "flexBasis": "150px",
+        "inset": "auto",
+        "flexWrap": "nowrap",
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "alignItems": "stretch",
+        "maxWidth": "1500px",
+        "minWidth": "800px"
+      },
+      "isFixedHeight": false,
+      "isFixedWidth": false,
+      "className": "p-1",
+      "items": [
+        {
+          "type": "container",
+          "body": [
+            {
+              "type": "tpl",
+              "tpl": "大屏报表示例",
+              "inline": true,
+              "wrapperComponent": "",
+              "style": {
+                "letter-spacing": "5px",
+                "fontFamily": "Microsoft YaHei"
+              },
+              "themeCss": {
+                "baseControlClassName": {
+                  "font:default": {
+                    "color": "#fff",
+                    "fontSize": "27px"
+                  }
+                }
+              },
+              "id": "u:9d42fb1dfea2"
+            }
+          ],
+          "size": "xs",
+          "style": {
+            "position": "relative",
+            "display": "flex",
+            "flex": "0 0 auto",
+            "flexWrap": "nowrap",
+            "justifyContent": "center",
+            "inset": "auto",
+            "alignItems": "center"
+          },
+          "wrapperBody": false,
+          "isFixedHeight": false,
+          "isFixedWidth": false,
+          "id": "u:0211f235aebc"
+        },
+        {
+          "type": "flex",
+          "className": "p-1",
+          "items": [
+            {
+              "type": "container",
+              "body": [
+                {
+                  "type": "chart-column",
+                  "chartTitle": "水平柱状图",
+                  "xyFlip": true,
+                  "dataSourceType": "api",
+                  "dimensions": [
+                    {
+                      "as": "name"
+                    }
+                  ],
+                  "measures": [
+                    {
+                      "modelFieldType": "number",
+                      "formatter": "numberToMillionBillion",
+                      "as": "value",
+                      "formatterToFixed": 2,
+                      "label": "销售额",
+                      "orderBy": "asc"
+                    }
+                  ],
+                  "columnChartType": "default",
+                  "titleShow": true,
+                  "legendShow": false,
+                  "labelShow": false,
+                  "tooltipShow": true,
+                  "xAxisShow": true,
+                  "xAxisInverse": false,
+                  "xAxisLabelShow": true,
+                  "xAxisLabelShowOverlap": false,
+                  "yAxisShow": false,
+                  "yAxisMinAsDataMinAndMaxAsDataMax": false,
+                  "yAxisSplitLineShow": false,
+                  "yAxisSplitAreaShow": false,
+                  "yAxisFormatter": "",
+                  "titleAlignment": "left",
+                  "legendAlign": "auto",
+                  "legendOrient": "horizontal",
+                  "legendPosition": "top",
+                  "labelPosition": "top",
+                  "labelOverflow": "truncate",
+                  "labelContent": "b,c",
+                  "tooltipContent": "b,c",
+                  "colorTheme": "custom",
+                  "color": [
+                    "#5470c6",
+                    "#ee6666",
+                    "#91cc75",
+                    "#fac858",
+                    "#73c0de",
+                    "#3ba272",
+                    "#fc8452",
+                    "#9a60b4",
+                    "#ea7ccc"
+                  ],
+                  "gridTop": "35px",
+                  "gridBottom": "0px",
+                  "width": "180px",
+                  "columnBarWidth": 10,
+                  "height": "500px",
+                  "dataApi": {
+                    "method": "get",
+                    "url": "/mock/42601/amis-chart/shop/chart3",
+                    "dataType": "json",
+                    "requestAdaptor": "",
+                    "adaptor": ""
+                  },
+                  "columnBarGap": 5,
+                  "titleTextStyle": {
+                    "color": "var(--colors-brand-10)",
+                    "fontSize": "12px"
+                  },
+                  "titleText": "排名",
+                  "xAxisLabelStyle": {
+                    "color": "var(--colors-brand-7)",
+                    "fontSize": "10px"
+                  },
+                  "xAxisLineStyle": {
+                    "color": "var(--colors-brand-7)"
+                  },
+                  "gradientStatus": true,
+                  "gradientAlpha": 0.3,
+                  "gradientMode": "left2right",
+                  "id": "u:2f51506ed677",
+                  "colorBy": "series",
+                  "xAxisSplitLineShow": false,
+                  "xAxisSplitAreaShow": false,
+                  "xAxisLineShow": true,
+                  "axisTickStyle": {
+                    "show": true,
+                    "length": 5,
+                    "color": "#333",
+                    "width": 1
+                  }
+                }
+              ],
+              "size": "xs",
+              "style": {
+                "position": "static",
+                "display": "block",
+                "flex": "0 0 auto",
+                "background-clip": "border-box"
+              },
+              "wrapperBody": false,
+              "isFixedHeight": false,
+              "isFixedWidth": false,
+              "themeCss": {
+                "baseControlClassName": {
+                  "background:default": "rgba(198,207,216,0.1)",
+                  "border:default": {
+                    "border-image-source": "url(https://reports-1257314765.cos.ap-beijing.myqcloud.com/border-2.png)",
+                    "border-image-slice": "10 16 15 10 fill",
+                    "border-width": "10px 16px 15px 10px",
+                    "border-style": "solid"
+                  }
+                }
+              },
+              "id": "u:cbd1570f39db"
+            },
+            {
+              "type": "container",
+              "body": [
+                {
+                  "type": "service",
+                  "body": [
+                    {
+                      "type": "flex",
+                      "className": "p-1",
+                      "items": [
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "target-number",
+                              "dataSourceType": "context",
+                              "dimensions": [],
+                              "measures": [],
+                              "titleShow": true,
+                              "titleAlignment": "left",
+                              "contextData": [
+                                {
+                                  "formatter": "thousandSeparatorNumber",
+                                  "data": "${totalSales}",
+                                  "title": "今日总销售"
+                                }
+                              ],
+                              "alignClass": "flex-col",
+                              "chartStyle": {
+                                "color": "var(--colors-brand-5)"
+                              },
+                              "subTitleStyle": {
+                                "color": "var(--colors-brand-10)"
+                              },
+                              "id": "u:608917e09e22",
+                              "style": {
+                                "flexDirection": "row",
+                                "flexWrap": "nowrap"
+                              }
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "flex",
+                            "flex": "0 0 auto",
+                            "flexWrap": "nowrap",
+                            "alignItems": "center",
+                            "justifyContent": "flex-start"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:3c2b1ce952b4"
+                        },
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "target-number",
+                              "dataSourceType": "context",
+                              "dimensions": [],
+                              "measures": [],
+                              "titleShow": true,
+                              "titleAlignment": "left",
+                              "contextData": [
+                                {
+                                  "formatter": "numberAddPercentTag",
+                                  "data": "${conversionRate}",
+                                  "title": "订单转化率",
+                                  "formatterToFixed": 2
+                                }
+                              ],
+                              "alignClass": "flex-col",
+                              "chartStyle": {
+                                "color": "var(--colors-brand-5)"
+                              },
+                              "subTitleStyle": {
+                                "color": "var(--colors-brand-10)"
+                              },
+                              "id": "u:e49ceae1ca3a",
+                              "style": {
+                                "flexDirection": "row",
+                                "flexWrap": "nowrap"
+                              }
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "flex",
+                            "flex": "0 0 auto",
+                            "flexWrap": "nowrap",
+                            "alignItems": "center",
+                            "justifyContent": "flex-start"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "themeCss": {
+                            "baseControlClassName": {
+                              "padding-and-margin:default": {
+                                "marginLeft": "10px"
+                              }
+                            }
+                          },
+                          "id": "u:af6f4a1f3112"
+                        },
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "target-number",
+                              "dataSourceType": "context",
+                              "dimensions": [],
+                              "measures": [],
+                              "titleShow": true,
+                              "titleAlignment": "left",
+                              "contextData": [
+                                {
+                                  "formatter": "thousandSeparatorNumber",
+                                  "data": "${newUsers}",
+                                  "title": "新增用户数"
+                                }
+                              ],
+                              "alignClass": "flex-col",
+                              "subTitleStyle": {
+                                "color": "var(--colors-brand-10)"
+                              },
+                              "chartStyle": {
+                                "color": "var(--colors-brand-5)"
+                              },
+                              "id": "u:a3a392d8cafc",
+                              "style": {
+                                "flexDirection": "row",
+                                "flexWrap": "nowrap"
+                              }
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "flex",
+                            "flex": "0 0 auto",
+                            "flexWrap": "nowrap",
+                            "alignItems": "center",
+                            "justifyContent": "flex-start"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "themeCss": {
+                            "baseControlClassName": {
+                              "padding-and-margin:default": {
+                                "marginLeft": "10px"
+                              }
+                            }
+                          },
+                          "id": "u:e33c6f336f37"
+                        }
+                      ],
+                      "style": {
+                        "position": "relative",
+                        "inset": "auto",
+                        "flexWrap": "nowrap",
+                        "justifyContent": "space-around",
+                        "overflowX": "visible"
+                      },
+                      "isFixedHeight": false,
+                      "isFixedWidth": false,
+                      "themeCss": {
+                        "baseControlClassName": {
+                          "padding-and-margin:default": {
+                            "margin": "0"
+                          }
+                        }
+                      },
+                      "id": "u:24d91f4a63af"
+                    }
+                  ],
+                  "messages": {},
+                  "api": {
+                    "method": "get",
+                    "url": "/mock/42601/amis-chart/shop/chart1"
+                  },
+                  "style": {
+                    "width": "80%"
+                  },
+                  "dsType": "api",
+                  "id": "u:841ad69ded57"
+                },
+                {
+                  "type": "chart-map",
+                  "tooltipContent": "b,c",
+                  "labelContent": "b",
+                  "labelShow": false,
+                  "mapURL": "/api/geojson/china",
+                  "mapName": "china",
+                  "mapChartType": "china",
+                  "dataSourceType": "api",
+                  "dimensions": [
+                    {
+                      "as": "name",
+                      "label": ""
+                    }
+                  ],
+                  "measures": [
+                    {
+                      "modelFieldType": "number",
+                      "formatter": "thousandSeparatorNumber",
+                      "as": "value",
+                      "label": "销售额"
+                    }
+                  ],
+                  "titleShow": false,
+                  "tooltipShow": true,
+                  "mapZoom": 1,
+                  "mapRoam": false,
+                  "mapBorderColor": "#fff",
+                  "mapBorderWidth": 1,
+                  "titleAlignment": "left",
+                  "visualMapOrient": "horizontal",
+                  "visualMapMin": 1,
+                  "visualMapMax": 80000,
+                  "visualMapItemWidth": 10,
+                  "visualMapItemHeight": 60,
+                  "visualMapHoverLink": true,
+                  "visualMapInverse": false,
+                  "visualMapCalculable": false,
+                  "visualMapTextMax": "高",
+                  "visualMapTextMin": "低",
+                  "gridTop": "10px",
+                  "gridBottom": "10",
+                  "visualMapShow": true,
+                  "dataApi": {
+                    "method": "get",
+                    "url": "/mock/42601/amis-chart/shop/chart2"
+                  },
+                  "titleText": "各区域销售数据",
+                  "titleTextStyle": {
+                    "color": "#4c97f0",
+                    "fontSize": "var(--fonts-size-6)"
+                  },
+                  "height": "380px",
+                  "width": "450px",
+                  "style": {
+                    "marginTop": "var(--sizes-size-1)",
+                    "marginRight": "var(--sizes-size-1)",
+                    "marginBottom": "var(--sizes-size-1)",
+                    "marginLeft": "var(--sizes-size-1)",
+                    "width": "500px",
+                    "height": "380px"
+                  },
+                  "id": "u:5eec7f60829d",
+                  "visualMapInRangeMin": "#ffd8bf",
+                  "visualMapInRangeMax": "#d4380d",
+                  "mapAreaColor": "#871400"
+                }
+              ],
+              "size": "xs",
+              "style": {
+                "position": "static",
+                "display": "flex",
+                "flex": "1 1 auto",
+                "background-clip": "border-box",
+                "overflowX": "auto",
+                "flexGrow": 1,
+                "flexWrap": "nowrap",
+                "flexDirection": "column",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "minWidth": "500px"
+              },
+              "wrapperBody": false,
+              "isFixedHeight": false,
+              "isFixedWidth": false,
+              "themeCss": {
+                "baseControlClassName": {
+                  "background:default": "rgba(198,207,216,0.1)",
+                  "border:default": {
+                    "border-image-source": "url(https://reports-1257314765.cos.ap-beijing.myqcloud.com/border-2.png)",
+                    "border-image-slice": "10 16 15 10 fill",
+                    "border-width": "10px 16px 15px 10px",
+                    "border-style": "solid"
+                  }
+                }
+              },
+              "id": "u:a6c7b04afa71"
+            },
+            {
+              "type": "flex",
+              "className": "",
+              "items": [
+                {
+                  "type": "flex",
+                  "items": [
+                    {
+                      "type": "flex",
+                      "className": "",
+                      "items": [
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "tpl",
+                              "tpl": "用户分布",
+                              "inline": true,
+                              "wrapperComponent": "",
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "16px",
+                                    "color": "var(--colors-brand-10)",
+                                    "fontWeight": "bold",
+                                    "font-family": "Microsoft YaHei"
+                                  }
+                                }
+                              },
+                              "id": "u:e39344b2a6b2"
+                            },
+                            {
+                              "type": "tpl",
+                              "style": {},
+                              "wrapperComponent": "",
+                              "tpl": "New user distribution",
+                              "inline": true,
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "12px",
+                                    "color": "var(--colors-brand-6)",
+                                    "font-family": "Microsoft YaHei"
+                                  }
+                                }
+                              },
+                              "id": "u:3533ab0b16ed"
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "flex",
+                            "flex": "0 0 auto",
+                            "flexWrap": "nowrap",
+                            "flexDirection": "column",
+                            "alignItems": "flex-start"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:b3fef66fbb97"
+                        },
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "chart-pie",
+                              "dataSourceType": "staticJson",
+                              "dimensions": [],
+                              "measures": [
+                                {
+                                  "as": "80后",
+                                  "modelFieldType": "number",
+                                  "formatter": ""
+                                },
+                                {
+                                  "modelFieldType": "number",
+                                  "formatter": "",
+                                  "as": "90后"
+                                },
+                                {
+                                  "modelFieldType": "number",
+                                  "formatter": "",
+                                  "as": "00后"
+                                },
+                                {
+                                  "modelFieldType": "number",
+                                  "formatter": "",
+                                  "as": "10后"
+                                },
+                                {
+                                  "modelFieldType": "number",
+                                  "formatter": "",
+                                  "as": "70后"
+                                }
+                              ],
+                              "titleShow": false,
+                              "titleAlignment": "center",
+                              "height": "120px",
+                              "titleText": "新增用户分布",
+                              "titleTextStyle": {
+                                "color": "#ffffff"
+                              },
+                              "radius": "40px",
+                              "chartTitle": "环形图",
+                              "tooltipContent": "b,c,d",
+                              "labelContent": "d,b",
+                              "pieChartType": "ring",
+                              "innerRadius": "30px",
+                              "dataType": 2,
+                              "staticJson": {
+                                "80后": 12600,
+                                "90后": 13860,
+                                "00后": 36553,
+                                "10后": 570,
+                                "70后": 3120
+                              },
+                              "legendShow": false,
+                              "labelShow": false,
+                              "tooltipShow": true,
+                              "legendAlign": "auto",
+                              "legendOrient": "horizontal",
+                              "legendPosition": "top",
+                              "labelPosition": "top",
+                              "labelOverflow": "truncate",
+                              "colorTheme": "default",
+                              "color": [],
+                              "labelTextStyle": {
+                                "color": "#ffffff",
+                                "fontSize": "10px",
+                                "fontWeight": "#ffffff",
+                                "lineHeight": "var(--fonts-size-6)"
+                              },
+                              "centerVertical": "70px",
+                              "width": "100%",
+                              "chartItemStyle": {
+                                "borderRadius": 3
+                              },
+                              "id": "u:cefb3d06f8cd",
+                              "gradientStatus": false
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "flex",
+                            "flex": "1 1 auto",
+                            "flexWrap": "nowrap",
+                            "flexDirection": "column",
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "flexGrow": 1,
+                            "flexBasis": "auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:65760a36b1b0"
+                        },
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "service",
+                              "body": [
+                                {
+                                  "type": "flex",
+                                  "className": "p-1",
+                                  "items": [
+                                    {
+                                      "type": "container",
+                                      "body": [
+                                        {
+                                          "type": "target-number",
+                                          "dataSourceType": "context",
+                                          "dimensions": [],
+                                          "measures": [],
+                                          "titleShow": true,
+                                          "titleAlignment": "left",
+                                          "fontSize": 16,
+                                          "fontColor": "#4a90e2",
+                                          "contextData": [
+                                            {
+                                              "formatter": "pureNumber",
+                                              "data": "${woman}",
+                                              "title": "女性用户",
+                                              "formatterToFixed": 2
+                                            }
+                                          ],
+                                          "chartStyle": {
+                                            "color": "var(--colors-brand-5)",
+                                            "fontSize": "var(--fonts-size-6)"
+                                          },
+                                          "subTitleStyle": {
+                                            "color": "var(--colors-brand-10)"
+                                          },
+                                          "id": "u:15c17d3cfb76",
+                                          "style": {
+                                            "flexDirection": "row",
+                                            "flexWrap": "nowrap"
+                                          },
+                                          "alignClass": "flex-col"
+                                        }
+                                      ],
+                                      "size": "xs",
+                                      "style": {
+                                        "position": "static",
+                                        "display": "block",
+                                        "flex": "1 1 auto",
+                                        "flexGrow": 1
+                                      },
+                                      "wrapperBody": false,
+                                      "isFixedHeight": false,
+                                      "isFixedWidth": false,
+                                      "id": "u:fff4a040b305"
+                                    },
+                                    {
+                                      "type": "container",
+                                      "body": [
+                                        {
+                                          "type": "target-number",
+                                          "dataSourceType": "context",
+                                          "dimensions": [],
+                                          "measures": [],
+                                          "titleShow": true,
+                                          "titleAlignment": "left",
+                                          "fontSize": 16,
+                                          "fontColor": "#4a90e2",
+                                          "contextData": [
+                                            {
+                                              "formatter": "thousandSeparatorNumber",
+                                              "data": "${man}",
+                                              "title": "男性用户"
+                                            }
+                                          ],
+                                          "chartStyle": {
+                                            "color": "var(--colors-brand-5)",
+                                            "fontSize": "var(--fonts-size-6)"
+                                          },
+                                          "subTitleStyle": {
+                                            "color": "var(--colors-brand-10)"
+                                          },
+                                          "id": "u:ae7dc9edcf8a",
+                                          "style": {
+                                            "flexDirection": "row",
+                                            "flexWrap": "nowrap"
+                                          },
+                                          "alignClass": "flex-col"
+                                        }
+                                      ],
+                                      "size": "xs",
+                                      "style": {
+                                        "position": "static",
+                                        "display": "block",
+                                        "flex": "1 1 auto",
+                                        "flexGrow": 1,
+                                        "flexBasis": "auto"
+                                      },
+                                      "wrapperBody": false,
+                                      "isFixedHeight": false,
+                                      "isFixedWidth": false,
+                                      "id": "u:6561e84e1fb8"
+                                    }
+                                  ],
+                                  "style": {
+                                    "position": "relative"
+                                  },
+                                  "id": "u:65965e121a83"
+                                }
+                              ],
+                              "messages": {},
+                              "api": {
+                                "method": "get",
+                                "url": "/mock/42601/amis-chart/shop/chart1"
+                              },
+                              "dsType": "api",
+                              "id": "u:c1e07a87f741"
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "block",
+                            "flex": "0 0 auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:304a34d34826"
+                        },
+                        {
+                          "type": "container",
+                          "style": {
+                            "position": "absolute",
+                            "display": "block",
+                            "flex": "0 0 auto",
+                            "inset": "10px 0px auto auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedWidth": false,
+                          "originPosition": "right-top",
+                          "body": [
+                            {
+                              "type": "tpl",
+                              "tpl": "03",
+                              "inline": true,
+                              "wrapperComponent": "",
+                              "style": {
+                                "fontFamily": "Microsoft YaHei",
+                                "letter-spacing": "5px",
+                                "textAlign": "center"
+                              },
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "30px",
+                                    "color": "var(--colors-brand-5)",
+                                    "fontWeight": "bold"
+                                  }
+                                }
+                              },
+                              "id": "u:9ee0d86c96a1"
+                            }
+                          ],
+                          "id": "u:2b3486a0b0b4"
+                        }
+                      ],
+                      "style": {
+                        "position": "relative",
+                        "flexDirection": "column",
+                        "flex": "1 1 auto",
+                        "inset": "auto",
+                        "flexWrap": "nowrap",
+                        "justifyContent": "flex-start",
+                        "overflowY": "visible",
+                        "background-clip": "border-box",
+                        "flexBasis": "200px",
+                        "flexGrow": 1
+                      },
+                      "isFixedHeight": false,
+                      "themeCss": {
+                        "baseControlClassName": {
+                          "background:default": "rgba(198,207,216,0.1)",
+                          "border:default": {
+                            "border-image-source": "url(https://reports-1257314765.cos.ap-beijing.myqcloud.com/border-2.png)",
+                            "border-image-slice": "10 16 15 10 fill",
+                            "border-width": "10px 16px 15px 10px",
+                            "border-style": "solid"
+                          }
+                        }
+                      },
+                      "id": "u:9499ad0b6bb8"
+                    },
+                    {
+                      "type": "flex",
+                      "className": "",
+                      "items": [
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "tpl",
+                              "tpl": "近七日新购用户",
+                              "inline": true,
+                              "wrapperComponent": "",
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "color": "var(--colors-brand-10)",
+                                    "fontSize": "16px",
+                                    "fontWeight": "bold",
+                                    "font-family": "Microsoft YaHei"
+                                  }
+                                }
+                              },
+                              "id": "u:13e813e152ae"
+                            },
+                            {
+                              "type": "tpl",
+                              "style": {},
+                              "wrapperComponent": "",
+                              "tpl": "Newly purchased users",
+                              "inline": true,
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "12px",
+                                    "color": "var(--colors-brand-6)",
+                                    "font-family": "Microsoft YaHei"
+                                  }
+                                }
+                              },
+                              "id": "u:968bfa337d6d"
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "flex",
+                            "flex": "0 0 auto",
+                            "flexWrap": "nowrap",
+                            "flexDirection": "column",
+                            "alignItems": "flex-start"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:aeeaf1e461de"
+                        },
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "chart-line",
+                              "dataSourceType": "api",
+                              "dimensions": [
+                                {
+                                  "as": "datetime"
+                                }
+                              ],
+                              "measures": [
+                                {
+                                  "as": "woman",
+                                  "label": "女性用户",
+                                  "modelFieldType": "number",
+                                  "formatter": "thousandSeparatorNumber"
+                                },
+                                {
+                                  "modelFieldType": "number",
+                                  "formatter": "thousandSeparatorNumber",
+                                  "as": "man",
+                                  "label": "男性用户"
+                                }
+                              ],
+                              "titleShow": false,
+                              "titleAlignment": "center",
+                              "height": "120px",
+                              "titleText": "近七日新购用户",
+                              "titleTextStyle": {
+                                "color": "#ffffff"
+                              },
+                              "dataApi": {
+                                "method": "get",
+                                "url": "/mock/42601/amis-chart/shop/chart6"
+                              },
+                              "stackedLineChart": true,
+                              "legendShow": false,
+                              "labelShow": false,
+                              "tooltipShow": true,
+                              "xAxisShow": true,
+                              "xAxisInverse": false,
+                              "xAxisLabelShow": true,
+                              "xAxisLabelShowOverlap": false,
+                              "yAxisShow": false,
+                              "yAxisMinAsDataMinAndMaxAsDataMax": false,
+                              "yAxisSplitLineShow": false,
+                              "yAxisSplitAreaShow": false,
+                              "yAxisFormatter": "",
+                              "lineType": "default",
+                              "legendAlign": "auto",
+                              "legendOrient": "horizontal",
+                              "legendPosition": "top",
+                              "labelPosition": "top",
+                              "labelOverflow": "truncate",
+                              "labelContent": "b,c",
+                              "tooltipContent": "b,c",
+                              "colorTheme": "lmq217h4",
+                              "color": [
+                                "#fa541c",
+                                "#52c41a",
+                                "#b37feb",
+                                "#faad14",
+                                "#7cb305",
+                                "#fa8c16",
+                                "#eb2f96"
+                              ],
+                              "gridBottom": "5",
+                              "gridTop": "20",
+                              "gridLeft": "-25",
+                              "chartTitle": "堆叠面积图",
+                              "titleBackgroundColor": "",
+                              "width": "100%",
+                              "xAxisLabelStyle": {
+                                "color": "var(--colors-brand-7)",
+                                "fontSize": "10px"
+                              },
+                              "xAxisLineStyle": {
+                                "color": "var(--colors-brand-7)"
+                              },
+                              "id": "u:ef4dff35dd87"
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "flex",
+                            "flex": "1 1 auto",
+                            "flexWrap": "nowrap",
+                            "flexDirection": "column",
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "flexGrow": 1,
+                            "flexBasis": "auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:cc7f6b4104c1"
+                        },
+                        {
+                          "type": "service",
+                          "body": [
+                            {
+                              "type": "flex",
+                              "className": "p-1",
+                              "items": [
+                                {
+                                  "type": "container",
+                                  "body": [
+                                    {
+                                      "type": "target-number",
+                                      "dataSourceType": "context",
+                                      "dimensions": [],
+                                      "measures": [],
+                                      "titleShow": true,
+                                      "titleAlignment": "left",
+                                      "fontSize": 16,
+                                      "fontColor": "#4a90e2",
+                                      "contextData": [
+                                        {
+                                          "formatter": "numberAddPercentTag",
+                                          "data": "${growthRate}",
+                                          "title": "增长率",
+                                          "formatterToFixed": 2
+                                        }
+                                      ],
+                                      "chartStyle": {
+                                        "color": "var(--colors-brand-5)",
+                                        "fontSize": "var(--fonts-size-6)"
+                                      },
+                                      "subTitleStyle": {
+                                        "color": "var(--colors-brand-10)"
+                                      },
+                                      "id": "u:ae8ca4ed2c81",
+                                      "style": {
+                                        "flexDirection": "row",
+                                        "flexWrap": "nowrap"
+                                      },
+                                      "alignClass": "flex-col"
+                                    }
+                                  ],
+                                  "size": "xs",
+                                  "style": {
+                                    "position": "static",
+                                    "display": "block",
+                                    "flex": "1 1 auto",
+                                    "flexGrow": 1
+                                  },
+                                  "wrapperBody": false,
+                                  "isFixedHeight": false,
+                                  "isFixedWidth": false,
+                                  "id": "u:33a08588805f"
+                                },
+                                {
+                                  "type": "container",
+                                  "body": [
+                                    {
+                                      "type": "target-number",
+                                      "dataSourceType": "context",
+                                      "dimensions": [],
+                                      "measures": [],
+                                      "titleShow": true,
+                                      "titleAlignment": "left",
+                                      "contextData": [
+                                        {
+                                          "formatter": "numberAddPercentTag",
+                                          "data": "${conversionRate}",
+                                          "title": "转化率"
+                                        }
+                                      ],
+                                      "chartStyle": {
+                                        "color": "var(--colors-brand-5)",
+                                        "fontSize": "var(--fonts-size-6)"
+                                      },
+                                      "subTitleStyle": {
+                                        "color": "var(--colors-brand-10)"
+                                      },
+                                      "alignClass": "flex-col",
+                                      "id": "u:be676b243ead",
+                                      "style": {
+                                        "flexDirection": "row",
+                                        "flexWrap": "nowrap"
+                                      }
+                                    }
+                                  ],
+                                  "size": "xs",
+                                  "style": {
+                                    "position": "static",
+                                    "display": "block",
+                                    "flex": "1 1 auto",
+                                    "flexGrow": 1,
+                                    "flexBasis": "auto"
+                                  },
+                                  "wrapperBody": false,
+                                  "isFixedHeight": false,
+                                  "isFixedWidth": false,
+                                  "id": "u:693854f5ebdb"
+                                }
+                              ],
+                              "style": {
+                                "position": "relative",
+                                "inset": "auto",
+                                "flexWrap": "nowrap",
+                                "justifyContent": "space-around"
+                              },
+                              "isFixedHeight": false,
+                              "isFixedWidth": false,
+                              "id": "u:065914d1eaa2"
+                            }
+                          ],
+                          "messages": {},
+                          "api": {
+                            "method": "get",
+                            "url": "/mock/42601/amis-chart/shop/chart1"
+                          },
+                          "dsType": "api",
+                          "id": "u:f1a4ed61bcd2"
+                        },
+                        {
+                          "type": "container",
+                          "style": {
+                            "position": "absolute",
+                            "display": "block",
+                            "flex": "0 0 auto",
+                            "inset": "10px 0px auto auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedWidth": false,
+                          "originPosition": "right-top",
+                          "body": [
+                            {
+                              "type": "tpl",
+                              "tpl": "02",
+                              "inline": true,
+                              "wrapperComponent": "",
+                              "style": {
+                                "fontFamily": "Microsoft YaHei",
+                                "letter-spacing": "5px",
+                                "textAlign": "center"
+                              },
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "30px",
+                                    "color": "var(--colors-brand-5)",
+                                    "fontWeight": "bold"
+                                  }
+                                }
+                              },
+                              "id": "u:e18212e4a38d"
+                            }
+                          ],
+                          "id": "u:1719afee7ea0"
+                        }
+                      ],
+                      "style": {
+                        "position": "relative",
+                        "flexDirection": "column",
+                        "flex": "1 1 auto",
+                        "flexWrap": "nowrap",
+                        "justifyContent": "flex-start",
+                        "background-clip": "border-box",
+                        "flexGrow": 1,
+                        "flexBasis": "200px",
+                        "alignItems": "stretch",
+                        "inset": "auto"
+                      },
+                      "isFixedHeight": false,
+                      "themeCss": {
+                        "baseControlClassName": {
+                          "background:default": "rgba(198,207,216,0.1)",
+                          "border:default": {
+                            "border-image-source": "url(https://reports-1257314765.cos.ap-beijing.myqcloud.com/border-2.png)",
+                            "border-image-slice": "10 16 15 10 fill",
+                            "border-width": "10px 16px 15px 10px",
+                            "border-style": "solid"
+                          }
+                        }
+                      },
+                      "id": "u:a3560a674227"
+                    },
+                    {
+                      "type": "flex",
+                      "items": [
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "tpl",
+                              "tpl": "用户复购率",
+                              "inline": true,
+                              "wrapperComponent": "",
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "16px",
+                                    "color": "var(--colors-brand-10)",
+                                    "fontWeight": "bold",
+                                    "font-family": "Microsoft YaHei"
+                                  }
+                                }
+                              },
+                              "id": "u:9a45ebf7a7ad"
+                            },
+                            {
+                              "type": "tpl",
+                              "style": {},
+                              "wrapperComponent": "",
+                              "tpl": "User repurchase rate",
+                              "inline": true,
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "12px",
+                                    "color": "var(--colors-brand-6)",
+                                    "font-family": "Microsoft YaHei"
+                                  }
+                                }
+                              },
+                              "id": "u:360c90087cbd"
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "flex",
+                            "flex": "0 0 auto",
+                            "flexWrap": "nowrap",
+                            "flexDirection": "column",
+                            "alignItems": "flex-start"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:26cb485a7992"
+                        },
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "chart-percent",
+                              "dataTitleShow": false,
+                              "dataTitleColor": "#333",
+                              "dataTitleOffsetY": "-30%",
+                              "dataDetailShow": true,
+                              "dataTitleFontSize": 6,
+                              "progressShow": true,
+                              "progressWidth": 5,
+                              "progressStartAngle": 90,
+                              "progressEndAngle": -270,
+                              "axisLineShow": true,
+                              "pointerShow": false,
+                              "dataSourceType": "api",
+                              "dimensions": [],
+                              "measures": [
+                                {
+                                  "as": "userRepurchaseRate",
+                                  "label": "用户复购率",
+                                  "modelFieldType": "number",
+                                  "formatter": "numberAddPercentTag"
+                                }
+                              ],
+                              "titleShow": false,
+                              "titleAlignment": "center",
+                              "width": "100%",
+                              "height": "120px",
+                              "titleText": "用户复购率",
+                              "titleTextStyle": {
+                                "color": "#ffffff"
+                              },
+                              "radius": "40",
+                              "progressColor": "var(--colors-brand-6)",
+                              "dataApi": {
+                                "method": "get",
+                                "url": "/mock/42601/amis-chart/shop/chart1"
+                              },
+                              "dataDetailStyle": {
+                                "color": "var(--colors-brand-6)",
+                                "fontSize": 16,
+                                "fontWeight": 700
+                              },
+                              "axisLineColor": "rgba(255, 255, 255, 0.1)",
+                              "id": "u:3a44cbfc58fe"
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "flex",
+                            "flex": "1 1 auto",
+                            "flexWrap": "nowrap",
+                            "flexDirection": "column",
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "overflowY": "auto",
+                            "flexGrow": 1,
+                            "flexBasis": "auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:a676ee491606"
+                        },
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "service",
+                              "body": [
+                                {
+                                  "type": "flex",
+                                  "className": "p-1",
+                                  "items": [
+                                    {
+                                      "type": "container",
+                                      "body": [
+                                        {
+                                          "type": "target-number",
+                                          "dataSourceType": "context",
+                                          "dimensions": [],
+                                          "measures": [],
+                                          "titleShow": true,
+                                          "titleAlignment": "left",
+                                          "contextData": [
+                                            {
+                                              "formatter": "thousandSeparatorNumber",
+                                              "data": "${orders}",
+                                              "title": "订单量"
+                                            }
+                                          ],
+                                          "alignClass": "flex-col",
+                                          "chartStyle": {
+                                            "color": "var(--colors-brand-5)",
+                                            "fontSize": "var(--fonts-size-6)"
+                                          },
+                                          "subTitleStyle": {
+                                            "color": "var(--colors-brand-10)"
+                                          },
+                                          "id": "u:efa88519974a",
+                                          "style": {
+                                            "flexDirection": "row",
+                                            "flexWrap": "nowrap"
+                                          }
+                                        }
+                                      ],
+                                      "size": "xs",
+                                      "style": {
+                                        "position": "static",
+                                        "display": "block",
+                                        "flex": "1 1 auto",
+                                        "flexGrow": 1,
+                                        "flexBasis": "auto"
+                                      },
+                                      "wrapperBody": false,
+                                      "isFixedHeight": false,
+                                      "isFixedWidth": false,
+                                      "id": "u:10682c0c26df"
+                                    },
+                                    {
+                                      "type": "container",
+                                      "body": [
+                                        {
+                                          "type": "target-number",
+                                          "dataSourceType": "context",
+                                          "dimensions": [],
+                                          "measures": [],
+                                          "titleShow": true,
+                                          "titleAlignment": "left",
+                                          "contextData": [
+                                            {
+                                              "formatter": "numberAddPercentTag",
+                                              "data": "${growthRate}",
+                                              "title": "增长率",
+                                              "formatterToFixed": 2
+                                            }
+                                          ],
+                                          "alignClass": "flex-col",
+                                          "chartStyle": {
+                                            "color": "var(--colors-brand-5)",
+                                            "fontSize": "var(--fonts-size-6)"
+                                          },
+                                          "subTitleStyle": {
+                                            "color": "var(--colors-brand-10)"
+                                          },
+                                          "id": "u:1fbbddf531b1",
+                                          "style": {
+                                            "flexDirection": "row",
+                                            "flexWrap": "nowrap"
+                                          }
+                                        }
+                                      ],
+                                      "size": "xs",
+                                      "style": {
+                                        "position": "static",
+                                        "display": "block",
+                                        "flex": "1 1 auto",
+                                        "flexGrow": 1,
+                                        "flexBasis": "auto"
+                                      },
+                                      "wrapperBody": false,
+                                      "isFixedHeight": false,
+                                      "isFixedWidth": false,
+                                      "id": "u:3b3c802e4cc8"
+                                    }
+                                  ],
+                                  "style": {
+                                    "position": "relative",
+                                    "inset": "auto",
+                                    "flexWrap": "nowrap",
+                                    "justifyContent": "space-around"
+                                  },
+                                  "isFixedHeight": false,
+                                  "isFixedWidth": false,
+                                  "id": "u:538cc3b5e402"
+                                }
+                              ],
+                              "messages": {},
+                              "api": {
+                                "method": "get",
+                                "url": "/mock/42601/amis-chart/shop/chart1"
+                              },
+                              "dsType": "api",
+                              "id": "u:9087ca19aee9"
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "block",
+                            "flex": "0 0 auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:b179fea4c97d"
+                        },
+                        {
+                          "type": "container",
+                          "style": {
+                            "position": "absolute",
+                            "display": "block",
+                            "flex": "0 0 auto",
+                            "inset": "10px 0px auto auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedWidth": false,
+                          "originPosition": "right-top",
+                          "body": [
+                            {
+                              "type": "tpl",
+                              "tpl": "01",
+                              "inline": true,
+                              "wrapperComponent": "",
+                              "style": {
+                                "fontFamily": "Microsoft YaHei",
+                                "letter-spacing": "5px",
+                                "textAlign": "center"
+                              },
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "30px",
+                                    "color": "var(--colors-brand-5)",
+                                    "fontWeight": "bold"
+                                  }
+                                }
+                              },
+                              "id": "u:5fa13f20071a"
+                            }
+                          ],
+                          "id": "u:49adff6bc4f4"
+                        }
+                      ],
+                      "style": {
+                        "position": "relative",
+                        "flexDirection": "column",
+                        "flex": "1 1 auto",
+                        "inset": "auto",
+                        "flexWrap": "nowrap",
+                        "justifyContent": "flex-start",
+                        "overflowY": "visible",
+                        "background-clip": "border-box",
+                        "flexGrow": 1,
+                        "flexBasis": "200px"
+                      },
+                      "isFixedHeight": false,
+                      "className": "",
+                      "themeCss": {
+                        "baseControlClassName": {
+                          "background:default": "rgba(198,207,216,0.1)",
+                          "border:default": {
+                            "border-image-source": "url(https://reports-1257314765.cos.ap-beijing.myqcloud.com/border-2.png)",
+                            "border-image-slice": "10 16 15 10 fill",
+                            "border-width": "10px 16px 15px 10px",
+                            "border-style": "solid"
+                          }
+                        }
+                      },
+                      "id": "u:97f9ca399e30"
+                    }
+                  ],
+                  "style": {
+                    "position": "relative",
+                    "inset": "auto",
+                    "flexWrap": "nowrap",
+                    "flex": "1 1 auto",
+                    "overflowY": "auto",
+                    "flexGrow": 1,
+                    "flexBasis": "auto",
+                    "justifyContent": "space-around"
+                  },
+                  "isFixedWidth": false,
+                  "id": "u:b04081b864e5"
+                },
+                {
+                  "type": "flex",
+                  "className": "",
+                  "items": [
+                    {
+                      "type": "flex",
+                      "className": "",
+                      "items": [
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "tpl",
+                              "tpl": "近期复购用户数",
+                              "inline": true,
+                              "wrapperComponent": "",
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "16px",
+                                    "color": "var(--colors-brand-10)",
+                                    "fontWeight": "bold",
+                                    "font-family": "Microsoft YaHei"
+                                  }
+                                }
+                              },
+                              "id": "u:f5eb3c09e77c"
+                            },
+                            {
+                              "type": "tpl",
+                              "style": {},
+                              "wrapperComponent": "",
+                              "tpl": "Repurchase user",
+                              "inline": true,
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "12px",
+                                    "color": "var(--colors-brand-6)",
+                                    "font-family": "Microsoft YaHei"
+                                  }
+                                }
+                              },
+                              "id": "u:00ba7f8638f8"
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "flex",
+                            "flex": "0 0 auto",
+                            "flexWrap": "nowrap",
+                            "flexDirection": "column",
+                            "alignItems": "flex-start"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:76ea4b9bf0b6"
+                        },
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "chart-column",
+                              "dataSourceType": "api",
+                              "dimensions": [
+                                {
+                                  "as": "datetime"
+                                }
+                              ],
+                              "measures": [
+                                {
+                                  "as": "man",
+                                  "label": "男性用户",
+                                  "modelFieldType": "number",
+                                  "formatter": "thousandSeparatorNumber"
+                                },
+                                {
+                                  "modelFieldType": "number",
+                                  "formatter": "thousandSeparatorNumber",
+                                  "as": "woman",
+                                  "label": "女性用户"
+                                }
+                              ],
+                              "titleShow": false,
+                              "titleAlignment": "center",
+                              "height": "120px",
+                              "titleText": "近七日复购用户",
+                              "titleTextStyle": {
+                                "color": "#ffffff"
+                              },
+                              "dataApi": {
+                                "method": "get",
+                                "url": "/mock/42601/amis-chart/shop/chart7"
+                              },
+                              "chartTitle": "双向对比柱图",
+                              "columnChartType": "twoWayComparison",
+                              "legendShow": false,
+                              "labelShow": false,
+                              "tooltipShow": true,
+                              "xAxisShow": true,
+                              "xAxisInverse": false,
+                              "xAxisLabelShow": true,
+                              "xAxisLabelShowOverlap": false,
+                              "yAxisShow": false,
+                              "yAxisMinAsDataMinAndMaxAsDataMax": false,
+                              "yAxisSplitLineShow": false,
+                              "yAxisSplitAreaShow": false,
+                              "yAxisFormatter": "",
+                              "legendAlign": "auto",
+                              "legendOrient": "horizontal",
+                              "legendPosition": "bottom",
+                              "labelPosition": "top",
+                              "labelOverflow": "truncate",
+                              "labelContent": "b,c",
+                              "tooltipContent": "b,c",
+                              "colorTheme": "default",
+                              "color": [],
+                              "gridTop": "20px",
+                              "gridBottom": "10px",
+                              "gridLeft": "-20px",
+                              "columnBarWidth": 4,
+                              "legendTextStyle": {
+                                "color": "#ffffff",
+                                "fontSize": "8px"
+                              },
+                              "width": "100%",
+                              "xAxisLabelStyle": {
+                                "color": "var(--colors-brand-7)",
+                                "fontSize": "10px"
+                              },
+                              "xAxisLineStyle": {
+                                "color": "var(--colors-brand-7)"
+                              },
+                              "gradientStatus": true,
+                              "gradientAlpha": 0.5,
+                              "gradientMode": "top2bottom",
+                              "id": "u:2ea7a8fd9309",
+                              "colorBy": "series",
+                              "xAxisSplitLineShow": false,
+                              "xAxisSplitAreaShow": false,
+                              "xAxisLineShow": true,
+                              "axisTickStyle": {
+                                "show": true,
+                                "length": 5,
+                                "color": "#333",
+                                "width": 1
+                              }
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "flex",
+                            "flex": "1 1 auto",
+                            "flexWrap": "nowrap",
+                            "flexDirection": "column",
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "flexGrow": 1,
+                            "flexBasis": "auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:b5c38aebfe97"
+                        },
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "service",
+                              "body": [
+                                {
+                                  "type": "flex",
+                                  "className": "p-1",
+                                  "items": [
+                                    {
+                                      "type": "container",
+                                      "body": [
+                                        {
+                                          "type": "target-number",
+                                          "dataSourceType": "context",
+                                          "dimensions": [],
+                                          "measures": [],
+                                          "titleShow": true,
+                                          "titleAlignment": "left",
+                                          "fontSize": 16,
+                                          "fontColor": "#4a90e2",
+                                          "contextData": [
+                                            {
+                                              "formatter": "thousandSeparatorNumber",
+                                              "data": "${orders}",
+                                              "title": "今日订单量"
+                                            }
+                                          ],
+                                          "chartStyle": {
+                                            "color": "var(--colors-brand-5)",
+                                            "fontSize": "var(--fonts-size-6)"
+                                          },
+                                          "subTitleStyle": {
+                                            "color": "var(--colors-brand-10)"
+                                          },
+                                          "id": "u:51541f7cbfea"
+                                        }
+                                      ],
+                                      "size": "xs",
+                                      "style": {
+                                        "position": "static",
+                                        "display": "block",
+                                        "flex": "1 1 auto",
+                                        "flexGrow": 1,
+                                        "flexBasis": "auto"
+                                      },
+                                      "wrapperBody": false,
+                                      "isFixedHeight": false,
+                                      "isFixedWidth": false,
+                                      "id": "u:c75b431c7d68"
+                                    },
+                                    {
+                                      "type": "container",
+                                      "body": [
+                                        {
+                                          "type": "target-number",
+                                          "dataSourceType": "context",
+                                          "dimensions": [],
+                                          "measures": [],
+                                          "titleShow": true,
+                                          "titleAlignment": "left",
+                                          "fontSize": 16,
+                                          "fontColor": "#4a90e2",
+                                          "contextData": [
+                                            {
+                                              "formatter": "numberAddPercentTag",
+                                              "data": "${growthRate}",
+                                              "title": "订单增长率",
+                                              "formatterToFixed": 2
+                                            }
+                                          ],
+                                          "chartStyle": {
+                                            "color": "var(--colors-brand-5)",
+                                            "fontSize": "var(--fonts-size-6)"
+                                          },
+                                          "subTitleStyle": {
+                                            "color": "var(--colors-brand-10)"
+                                          },
+                                          "id": "u:3e93b5cb50fa"
+                                        }
+                                      ],
+                                      "size": "xs",
+                                      "style": {
+                                        "position": "static",
+                                        "display": "block",
+                                        "flex": "1 1 auto",
+                                        "flexGrow": 1,
+                                        "flexBasis": "auto"
+                                      },
+                                      "wrapperBody": false,
+                                      "isFixedHeight": false,
+                                      "isFixedWidth": false,
+                                      "id": "u:f68e691f4690"
+                                    }
+                                  ],
+                                  "style": {
+                                    "position": "relative"
+                                  },
+                                  "id": "u:547af485e5cb"
+                                }
+                              ],
+                              "messages": {},
+                              "api": {
+                                "method": "get",
+                                "url": "/mock/42601/amis-chart/shop/chart1"
+                              },
+                              "dsType": "api",
+                              "id": "u:cd6060bbe94c"
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "block",
+                            "flex": "0 0 auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:8f691d4db962"
+                        },
+                        {
+                          "type": "container",
+                          "style": {
+                            "position": "absolute",
+                            "display": "block",
+                            "flex": "0 0 auto",
+                            "inset": "10px 0px auto auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedWidth": false,
+                          "originPosition": "right-top",
+                          "body": [
+                            {
+                              "type": "tpl",
+                              "tpl": "04",
+                              "inline": true,
+                              "wrapperComponent": "",
+                              "style": {
+                                "fontFamily": "Microsoft YaHei",
+                                "letter-spacing": "5px",
+                                "textAlign": "center"
+                              },
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "30px",
+                                    "color": "var(--colors-brand-5)",
+                                    "fontWeight": "bold"
+                                  }
+                                }
+                              },
+                              "id": "u:daa3e480df33"
+                            }
+                          ],
+                          "id": "u:74591a600237"
+                        }
+                      ],
+                      "style": {
+                        "position": "relative",
+                        "flexDirection": "column",
+                        "flex": "1 1 auto",
+                        "flexWrap": "nowrap",
+                        "justifyContent": "flex-start",
+                        "background-clip": "border-box",
+                        "flexBasis": "200px",
+                        "flexGrow": 1
+                      },
+                      "isFixedHeight": false,
+                      "themeCss": {
+                        "baseControlClassName": {
+                          "background:default": "rgba(198,207,216,0.1)",
+                          "border:default": {
+                            "border-image-source": "url(https://reports-1257314765.cos.ap-beijing.myqcloud.com/border-2.png)",
+                            "border-image-slice": "10 16 15 10 fill",
+                            "border-width": "10px 16px 15px 10px",
+                            "border-style": "solid"
+                          }
+                        }
+                      },
+                      "id": "u:6a886592e80f"
+                    },
+                    {
+                      "type": "flex",
+                      "className": "",
+                      "items": [
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "tpl",
+                              "tpl": "新老用户占比",
+                              "inline": true,
+                              "wrapperComponent": "",
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "16px",
+                                    "color": "var(--colors-brand-10)",
+                                    "fontWeight": "bold",
+                                    "font-family": "Microsoft YaHei"
+                                  }
+                                }
+                              },
+                              "id": "u:9be37ad5cddf"
+                            },
+                            {
+                              "type": "tpl",
+                              "style": {},
+                              "wrapperComponent": "",
+                              "tpl": "New and old users",
+                              "inline": true,
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "12px",
+                                    "color": "var(--colors-brand-6)",
+                                    "font-family": "Microsoft YaHei"
+                                  }
+                                }
+                              },
+                              "id": "u:d3b28835ac24"
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "flex",
+                            "flex": "0 0 auto",
+                            "flexWrap": "nowrap",
+                            "flexDirection": "column",
+                            "alignItems": "flex-start"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:45aebc41bb36"
+                        },
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "chart-pie",
+                              "dataSourceType": "api",
+                              "dimensions": [],
+                              "measures": [
+                                {
+                                  "as": "oldUsers",
+                                  "label": "老用户",
+                                  "modelFieldType": "number",
+                                  "formatter": "thousandSeparatorNumber"
+                                },
+                                {
+                                  "modelFieldType": "number",
+                                  "formatter": "thousandSeparatorNumber",
+                                  "as": "newUsers",
+                                  "label": "新用户"
+                                }
+                              ],
+                              "titleShow": true,
+                              "titleAlignment": "left",
+                              "width": "100%",
+                              "height": "120px",
+                              "radius": "40",
+                              "dataApi": {
+                                "method": "get",
+                                "url": "/mock/42601/amis-chart/shop/chart1"
+                              },
+                              "chartTitle": "环形图",
+                              "tooltipContent": "b,c,d",
+                              "labelContent": "b,c,d",
+                              "pieChartType": "ring",
+                              "innerRadius": "30",
+                              "dataType": 2,
+                              "legendShow": false,
+                              "labelShow": false,
+                              "tooltipShow": true,
+                              "legendAlign": "auto",
+                              "legendOrient": "horizontal",
+                              "legendPosition": "top",
+                              "labelPosition": "top",
+                              "labelOverflow": "truncate",
+                              "colorTheme": "lmq217h4",
+                              "color": [
+                                "#fa541c",
+                                "#52c41a",
+                                "#b37feb",
+                                "#faad14",
+                                "#7cb305",
+                                "#fa8c16",
+                                "#eb2f96"
+                              ],
+                              "centerVertical": "70",
+                              "chartItemStyle": {
+                                "borderRadius": 5
+                              },
+                              "id": "u:2f1757e4c76e"
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "flex",
+                            "flex": "1 1 auto",
+                            "flexWrap": "nowrap",
+                            "flexDirection": "column",
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "flexGrow": 1,
+                            "flexBasis": "auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:883d4ac27ab0"
+                        },
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "service",
+                              "body": [
+                                {
+                                  "type": "flex",
+                                  "className": "p-1",
+                                  "items": [
+                                    {
+                                      "type": "container",
+                                      "body": [
+                                        {
+                                          "type": "target-number",
+                                          "dataSourceType": "context",
+                                          "dimensions": [],
+                                          "measures": [],
+                                          "titleShow": true,
+                                          "titleAlignment": "left",
+                                          "fontSize": 16,
+                                          "fontColor": "#4a90e2",
+                                          "contextData": [
+                                            {
+                                              "formatter": "thousandSeparatorNumber",
+                                              "data": "${newUsers}",
+                                              "title": "新购用户数"
+                                            }
+                                          ],
+                                          "chartStyle": {
+                                            "color": "var(--colors-brand-5)",
+                                            "fontSize": "var(--fonts-size-6)"
+                                          },
+                                          "subTitleStyle": {
+                                            "color": "var(--colors-brand-10)"
+                                          },
+                                          "id": "u:70aa0e7a0478"
+                                        }
+                                      ],
+                                      "size": "xs",
+                                      "style": {
+                                        "position": "static",
+                                        "display": "block",
+                                        "flex": "1 1 auto",
+                                        "flexGrow": 1,
+                                        "flexBasis": "auto"
+                                      },
+                                      "wrapperBody": false,
+                                      "isFixedHeight": false,
+                                      "isFixedWidth": false,
+                                      "id": "u:571277fd125b"
+                                    },
+                                    {
+                                      "type": "container",
+                                      "body": [
+                                        {
+                                          "type": "target-number",
+                                          "dataSourceType": "context",
+                                          "dimensions": [],
+                                          "measures": [],
+                                          "titleShow": true,
+                                          "titleAlignment": "left",
+                                          "fontSize": 16,
+                                          "fontColor": "#4a90e2",
+                                          "contextData": [
+                                            {
+                                              "formatter": "pureNumber",
+                                              "data": "${oldUsers}",
+                                              "title": "复购用户数",
+                                              "formatterToFixed": 2
+                                            }
+                                          ],
+                                          "chartStyle": {
+                                            "color": "var(--colors-brand-5)",
+                                            "fontSize": "var(--fonts-size-6)"
+                                          },
+                                          "subTitleStyle": {
+                                            "color": "var(--colors-brand-10)"
+                                          },
+                                          "id": "u:48c244d241d6"
+                                        }
+                                      ],
+                                      "size": "xs",
+                                      "style": {
+                                        "position": "static",
+                                        "display": "block",
+                                        "flex": "1 1 auto",
+                                        "flexGrow": 1,
+                                        "flexBasis": "auto"
+                                      },
+                                      "wrapperBody": false,
+                                      "isFixedHeight": false,
+                                      "isFixedWidth": false,
+                                      "id": "u:462bc058eea6"
+                                    }
+                                  ],
+                                  "style": {
+                                    "position": "relative"
+                                  },
+                                  "id": "u:798c9a1f1577"
+                                }
+                              ],
+                              "messages": {},
+                              "api": {
+                                "method": "get",
+                                "url": "/mock/42601/amis-chart/shop/chart1",
+                                "limit": "multiple",
+                                "orders": [
+                                  {
+                                    "order": false
+                                  }
+                                ]
+                              },
+                              "dsType": "model-entity",
+                              "id": "u:a7a6f249d8f4"
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "block",
+                            "flex": "0 0 auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:0f6aa16e62f3"
+                        },
+                        {
+                          "type": "container",
+                          "style": {
+                            "position": "absolute",
+                            "display": "block",
+                            "flex": "0 0 auto",
+                            "inset": "10px 0px auto auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedWidth": false,
+                          "originPosition": "right-bottom",
+                          "body": [
+                            {
+                              "type": "tpl",
+                              "tpl": "05",
+                              "inline": true,
+                              "wrapperComponent": "",
+                              "style": {
+                                "fontFamily": "Microsoft YaHei",
+                                "letter-spacing": "5px",
+                                "textAlign": "center"
+                              },
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "30px",
+                                    "color": "var(--colors-brand-5)",
+                                    "fontWeight": "bold"
+                                  }
+                                }
+                              },
+                              "id": "u:bc5bb00cb4c4"
+                            }
+                          ],
+                          "id": "u:0f444bedef9e"
+                        }
+                      ],
+                      "style": {
+                        "position": "relative",
+                        "flexDirection": "column",
+                        "flex": "1 1 auto",
+                        "flexWrap": "nowrap",
+                        "justifyContent": "flex-start",
+                        "overflowY": "visible",
+                        "background-clip": "border-box",
+                        "flexBasis": "200px",
+                        "flexGrow": 1
+                      },
+                      "isFixedHeight": false,
+                      "themeCss": {
+                        "baseControlClassName": {
+                          "background:default": "rgba(198,207,216,0.1)",
+                          "border:default": {
+                            "border-image-source": "url(https://reports-1257314765.cos.ap-beijing.myqcloud.com/border-2.png)",
+                            "border-image-slice": "10 16 15 10 fill",
+                            "border-width": "10px 16px 15px 10px",
+                            "border-style": "solid"
+                          }
+                        }
+                      },
+                      "id": "u:a84069605b6a"
+                    },
+                    {
+                      "type": "flex",
+                      "className": "",
+                      "items": [
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "tpl",
+                              "tpl": "各平台流量",
+                              "inline": true,
+                              "wrapperComponent": "",
+                              "style": {
+                                "textAlign": "center"
+                              },
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "16px",
+                                    "color": "var(--colors-brand-10)",
+                                    "fontWeight": "bold",
+                                    "font-family": "Microsoft YaHei"
+                                  }
+                                }
+                              },
+                              "id": "u:c8702ea28c06"
+                            },
+                            {
+                              "type": "tpl",
+                              "style": {},
+                              "wrapperComponent": "",
+                              "tpl": "Traffic from platforms",
+                              "inline": true,
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "12px",
+                                    "color": "var(--colors-brand-6)",
+                                    "font-family": "Microsoft YaHei"
+                                  }
+                                }
+                              },
+                              "id": "u:615d69180f48"
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "flex",
+                            "flex": "0 0 auto",
+                            "flexWrap": "nowrap",
+                            "flexDirection": "column",
+                            "alignItems": "flex-start"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:dce98fda4945"
+                        },
+                        {
+                          "type": "container",
+                          "body": [
+                            {
+                              "type": "chart-column",
+                              "dataSourceType": "api",
+                              "dimensions": [
+                                {
+                                  "as": "platform",
+                                  "label": "平台"
+                                }
+                              ],
+                              "measures": [
+                                {
+                                  "as": "uv",
+                                  "label": "流量",
+                                  "modelFieldType": "number",
+                                  "formatter": "thousandSeparatorNumber"
+                                }
+                              ],
+                              "titleShow": false,
+                              "titleAlignment": "center",
+                              "width": "100%",
+                              "height": "120px",
+                              "titleText": "各平台流量",
+                              "titleTextStyle": {
+                                "color": "#ffffff"
+                              },
+                              "dataApi": {
+                                "method": "get",
+                                "url": "/mock/42601/amis-chart/shop/chart8"
+                              },
+                              "chartTitle": "双向对比柱图",
+                              "columnChartType": "default",
+                              "legendShow": false,
+                              "labelShow": false,
+                              "tooltipShow": true,
+                              "xAxisShow": true,
+                              "xAxisInverse": false,
+                              "xAxisLabelShow": true,
+                              "xAxisLabelShowOverlap": false,
+                              "yAxisShow": false,
+                              "yAxisMinAsDataMinAndMaxAsDataMax": false,
+                              "yAxisSplitLineShow": false,
+                              "yAxisSplitAreaShow": false,
+                              "yAxisFormatter": "",
+                              "legendAlign": "auto",
+                              "legendOrient": "horizontal",
+                              "legendPosition": "top",
+                              "labelPosition": "top",
+                              "labelOverflow": "truncate",
+                              "labelContent": "c",
+                              "tooltipContent": "b,c",
+                              "colorTheme": "lmq217h4",
+                              "color": [
+                                "#1c7bec",
+                                "#a227ec",
+                                "#646591",
+                                "#5ce2cb",
+                                "#91cc75",
+                                "#fac858"
+                              ],
+                              "labelTextStyle": {
+                                "color": "#66a9f7",
+                                "fontSize": "5px",
+                                "fontWeight": "#ffffff",
+                                "lineHeight": "10px"
+                              },
+                              "gridTop": "20px",
+                              "gridBottom": "0px",
+                              "gridLeft": "-20px",
+                              "columnBarWidth": 6,
+                              "xAxisLabelStyle": {
+                                "color": "var(--colors-brand-7)",
+                                "fontSize": "10px"
+                              },
+                              "xAxisLineStyle": {
+                                "color": "var(--colors-brand-7)"
+                              },
+                              "id": "u:53862458c13b",
+                              "colorBy": "series",
+                              "gradientStatus": false,
+                              "xAxisSplitLineShow": false,
+                              "xAxisSplitAreaShow": false,
+                              "xAxisLineShow": true,
+                              "axisTickStyle": {
+                                "show": true,
+                                "length": 5,
+                                "color": "#333",
+                                "width": 1
+                              }
+                            }
+                          ],
+                          "size": "xs",
+                          "style": {
+                            "position": "static",
+                            "display": "flex",
+                            "flex": "1 1 auto",
+                            "flexWrap": "nowrap",
+                            "flexDirection": "column",
+                            "justifyContent": "center",
+                            "alignItems": "stretch",
+                            "flexGrow": 1,
+                            "flexBasis": "auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedHeight": false,
+                          "isFixedWidth": false,
+                          "id": "u:421b7e8d5e50"
+                        },
+                        {
+                          "type": "container",
+                          "style": {
+                            "position": "static",
+                            "display": "block",
+                            "flex": "0 0 auto"
+                          },
+                          "isFixedWidth": false,
+                          "isFixedHeight": false,
+                          "body": [
+                            {
+                              "type": "service",
+                              "body": [
+                                {
+                                  "type": "flex",
+                                  "className": "p-1",
+                                  "items": [
+                                    {
+                                      "type": "container",
+                                      "body": [
+                                        {
+                                          "type": "target-number",
+                                          "dataSourceType": "context",
+                                          "dimensions": [],
+                                          "measures": [],
+                                          "titleShow": true,
+                                          "titleAlignment": "left",
+                                          "fontSize": 16,
+                                          "fontColor": "#4a90e2",
+                                          "contextData": [
+                                            {
+                                              "formatter": "thousandSeparatorNumber",
+                                              "data": "${uv}",
+                                              "title": "UV"
+                                            }
+                                          ],
+                                          "chartStyle": {
+                                            "color": "var(--colors-brand-5)",
+                                            "fontSize": "var(--fonts-size-6)"
+                                          },
+                                          "subTitleStyle": {
+                                            "color": "var(--colors-brand-10)"
+                                          },
+                                          "id": "u:cc6ba8059754",
+                                          "style": {
+                                            "flexDirection": "row",
+                                            "flexWrap": "nowrap"
+                                          },
+                                          "alignClass": "flex-col"
+                                        }
+                                      ],
+                                      "size": "xs",
+                                      "style": {
+                                        "position": "static",
+                                        "display": "block",
+                                        "flex": "1 1 auto",
+                                        "flexGrow": 1
+                                      },
+                                      "wrapperBody": false,
+                                      "isFixedHeight": false,
+                                      "isFixedWidth": false,
+                                      "id": "u:a672255d83ec"
+                                    },
+                                    {
+                                      "type": "container",
+                                      "body": [
+                                        {
+                                          "type": "target-number",
+                                          "dataSourceType": "context",
+                                          "dimensions": [],
+                                          "measures": [],
+                                          "titleShow": true,
+                                          "titleAlignment": "left",
+                                          "contextData": [
+                                            {
+                                              "formatter": "thousandSeparatorNumber",
+                                              "data": "${pv}",
+                                              "title": "PV"
+                                            }
+                                          ],
+                                          "chartStyle": {
+                                            "color": "var(--colors-brand-5)",
+                                            "fontSize": "var(--fonts-size-6)"
+                                          },
+                                          "subTitleStyle": {
+                                            "color": "var(--colors-brand-10)"
+                                          },
+                                          "alignClass": "flex-col",
+                                          "id": "u:e4c74403f91b",
+                                          "style": {
+                                            "flexDirection": "row",
+                                            "flexWrap": "nowrap"
+                                          }
+                                        }
+                                      ],
+                                      "size": "xs",
+                                      "style": {
+                                        "position": "static",
+                                        "display": "block",
+                                        "flex": "1 1 auto",
+                                        "flexGrow": 1,
+                                        "flexBasis": "auto"
+                                      },
+                                      "wrapperBody": false,
+                                      "isFixedHeight": false,
+                                      "isFixedWidth": false,
+                                      "id": "u:a6bbd6a1e8ff"
+                                    }
+                                  ],
+                                  "style": {
+                                    "position": "relative",
+                                    "inset": "auto",
+                                    "flexWrap": "nowrap",
+                                    "justifyContent": "space-around"
+                                  },
+                                  "isFixedHeight": false,
+                                  "isFixedWidth": false,
+                                  "id": "u:0831a78f44e3"
+                                }
+                              ],
+                              "messages": {},
+                              "api": {
+                                "method": "get",
+                                "url": "/mock/42601/amis-chart/shop/chart1",
+                                "limit": "multiple",
+                                "orders": [
+                                  {
+                                    "order": false
+                                  }
+                                ]
+                              },
+                              "dsType": "model-entity",
+                              "id": "u:297c3a653edc"
+                            }
+                          ],
+                          "size": "xs",
+                          "wrapperBody": false,
+                          "id": "u:52d4747b7b3b"
+                        },
+                        {
+                          "type": "container",
+                          "style": {
+                            "position": "absolute",
+                            "display": "block",
+                            "flex": "0 0 auto",
+                            "inset": "10px 0px auto auto"
+                          },
+                          "wrapperBody": false,
+                          "isFixedWidth": false,
+                          "originPosition": "right-top",
+                          "body": [
+                            {
+                              "type": "tpl",
+                              "tpl": "06",
+                              "inline": true,
+                              "wrapperComponent": "",
+                              "style": {
+                                "fontFamily": "Microsoft YaHei",
+                                "letter-spacing": "5px",
+                                "textAlign": "center"
+                              },
+                              "themeCss": {
+                                "baseControlClassName": {
+                                  "font:default": {
+                                    "fontSize": "30px",
+                                    "color": "var(--colors-brand-5)",
+                                    "fontWeight": "bold"
+                                  }
+                                }
+                              },
+                              "id": "u:0bbaf10d3e68"
+                            }
+                          ],
+                          "id": "u:3ef4187f42c4"
+                        }
+                      ],
+                      "style": {
+                        "position": "relative",
+                        "flexDirection": "column",
+                        "flex": "1 1 auto",
+                        "inset": "auto",
+                        "flexWrap": "nowrap",
+                        "justifyContent": "flex-start",
+                        "background-clip": "border-box",
+                        "flexGrow": 1,
+                        "flexBasis": "200px"
+                      },
+                      "isFixedHeight": false,
+                      "themeCss": {
+                        "baseControlClassName": {
+                          "background:default": "rgba(198,207,216,0.1)",
+                          "border:default": {
+                            "border-image-source": "url(https://reports-1257314765.cos.ap-beijing.myqcloud.com/border-2.png)",
+                            "border-image-slice": "10 16 15 10 fill",
+                            "border-width": "10px 16px 15px 10px",
+                            "border-style": "solid"
+                          }
+                        }
+                      },
+                      "id": "u:0031e4fdcd88"
+                    }
+                  ],
+                  "style": {
+                    "position": "relative",
+                    "flex": "1 1 auto",
+                    "flexGrow": 1,
+                    "flexBasis": "auto",
+                    "inset": "auto",
+                    "flexWrap": "nowrap",
+                    "justifyContent": "space-around"
+                  },
+                  "isFixedWidth": false,
+                  "id": "u:790a8ba41a7b"
+                }
+              ],
+              "style": {
+                "position": "relative",
+                "flexDirection": "column",
+                "inset": "auto",
+                "flexWrap": "nowrap",
+                "flex": "1 1 auto",
+                "justifyContent": "space-around",
+                "flexBasis": "600px",
+                "overflowX": "auto",
+                "flexGrow": 1
+              },
+              "isFixedHeight": false,
+              "id": "u:c62660aec87c"
+            }
+          ],
+          "style": {
+            "position": "relative",
+            "inset": "auto",
+            "flexWrap": "wrap",
+            "flex": "0 0 auto",
+            "justifyContent": "space-around"
+          },
+          "isFixedWidth": false,
+          "id": "u:5c1a81783153"
+        },
+        {
+          "type": "flex",
+          "className": "p-1",
+          "items": [
+            {
+              "type": "container",
+              "body": [
+                {
+                  "type": "chart-word-cloud",
+                  "tooltipContent": "b,c",
+                  "labelContent": "b,c,d",
+                  "dataSourceType": "api",
+                  "dimensions": [
+                    {
+                      "as": "name"
+                    }
+                  ],
+                  "measures": [
+                    {
+                      "modelFieldType": "number",
+                      "formatter": "thousandSeparatorNumber",
+                      "as": "value"
+                    }
+                  ],
+                  "shape": "pentagon",
+                  "titleShow": true,
+                  "tooltipShow": true,
+                  "titleAlignment": "left",
+                  "colorTheme": "default",
+                  "color": [],
+                  "titleTextStyle": {
+                    "color": "var(--colors-brand-10)",
+                    "fontSize": "16px"
+                  },
+                  "titleText": "热销商品",
+                  "gridRight": "",
+                  "height": "100%",
+                  "dataApi": {
+                    "method": "get",
+                    "url": "/mock/42601/amis-chart/chart/wordcloud"
+                  },
+                  "gridBottom": "",
+                  "gridTop": "",
+                  "gradientStatus": false,
+                  "gradientAlpha": 0.3,
+                  "gradientMode": "top2bottom",
+                  "id": "u:9535737e3f4d"
+                }
+              ],
+              "size": "xs",
+              "style": {
+                "position": "static",
+                "display": "flex",
+                "flex": "1 1 auto",
+                "background-clip": "border-box",
+                "flexGrow": 1,
+                "flexBasis": "auto",
+                "flexWrap": "nowrap",
+                "flexDirection": "column",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "overflowX": "auto"
+              },
+              "wrapperBody": false,
+              "isFixedHeight": false,
+              "isFixedWidth": false,
+              "themeCss": {
+                "baseControlClassName": {
+                  "background:default": "rgba(198,207,216,0.1)",
+                  "border:default": {
+                    "border-image-source": "url(https://reports-1257314765.cos.ap-beijing.myqcloud.com/border-2.png)",
+                    "border-image-slice": "10 16 15 10 fill",
+                    "border-width": "10px 16px 15px 10px",
+                    "border-style": "solid"
+                  }
+                }
+              },
+              "id": "u:3758111ccf6f"
+            },
+            {
+              "type": "container",
+              "body": [
+                {
+                  "type": "chart-waterfall",
+                  "chartTitle": "阶梯瀑布图",
+                  "legendShow": false,
+                  "labelShow": false,
+                  "tooltipShow": true,
+                  "xAxisShow": true,
+                  "xAxisLabelShow": true,
+                  "yAxisShow": true,
+                  "yAxisSplitLineShow": true,
+                  "labelOverflow": "truncate",
+                  "labelContent": "c",
+                  "tooltipContent": "b,c",
+                  "negativeDataColor": "var(--colors-error-5)",
+                  "positiveDataColor": "var(--colors-brand-5)",
+                  "labelPosition": "top",
+                  "negativeLabelPosition": "bottom",
+                  "dataSourceType": "api",
+                  "dimensions": [
+                    {
+                      "as": "datetime"
+                    }
+                  ],
+                  "measures": [
+                    {
+                      "modelFieldType": "number",
+                      "formatter": "thousandSeparatorNumber",
+                      "as": "membership",
+                      "label": "新增用户数"
+                    }
+                  ],
+                  "titleTextStyle": {
+                    "color": "var(--colors-brand-10)",
+                    "fontSize": "16px",
+                    "fontWeight": "var(--fonts-weight-3)"
+                  },
+                  "titleText": "新增会员数",
+                  "titleShow": true,
+                  "titleAlignment": "left",
+                  "xAxisLabelStyle": {
+                    "color": "var(--colors-brand-7)",
+                    "fontSize": "10px"
+                  },
+                  "xAxisLineStyle": {
+                    "color": "var(--colors-brand-7)"
+                  },
+                  "xAxisInverse": false,
+                  "xAxisLabelShowOverlap": true,
+                  "yAxisMinAsDataMinAndMaxAsDataMax": false,
+                  "yAxisSplitAreaShow": false,
+                  "yAxisFormatter": "",
+                  "yAxisLabelStyle": {
+                    "color": "var(--colors-brand-7)",
+                    "fontSize": "10px"
+                  },
+                  "labelTextStyle": {
+                    "color": "var(--colors-brand-10)"
+                  },
+                  "dataApi": {
+                    "method": "get",
+                    "url": "/mock/42601/amis-chart/shop/chart7"
+                  },
+                  "height": "260px",
+                  "columnBarWidth": 25,
+                  "xAxisLabelRotate": 0,
+                  "id": "u:98b6558e59d9",
+                  "xAxisSplitLineShow": false,
+                  "xAxisSplitAreaShow": false,
+                  "xAxisLineShow": true,
+                  "axisTickStyle": {
+                    "show": true,
+                    "length": 5,
+                    "color": "#333",
+                    "width": 1
+                  }
+                },
+                {
+                  "type": "chart-column",
+                  "chartTitle": "堆叠柱状图",
+                  "columnChartType": "stacked",
+                  "dataSourceType": "api",
+                  "dimensions": [
+                    {
+                      "as": "datetime"
+                    }
+                  ],
+                  "measures": [
+                    {
+                      "modelFieldType": "number",
+                      "formatter": "thousandSeparatorNumber",
+                      "as": "man",
+                      "label": "男性用户"
+                    },
+                    {
+                      "modelFieldType": "number",
+                      "formatter": "thousandSeparatorNumber",
+                      "as": "woman",
+                      "label": "女性用户"
+                    }
+                  ],
+                  "titleShow": true,
+                  "legendShow": false,
+                  "labelShow": false,
+                  "tooltipShow": true,
+                  "xAxisShow": true,
+                  "xAxisInverse": false,
+                  "yAxisShow": true,
+                  "titleAlignment": "left",
+                  "legendAlign": "auto",
+                  "legendOrient": "horizontal",
+                  "legendPosition": "top",
+                  "labelPosition": "top",
+                  "labelOverflow": "truncate",
+                  "labelContent": "b,c",
+                  "tooltipContent": "b,c",
+                  "xAxisLabelShow": true,
+                  "xAxisLabelShowOverlap": true,
+                  "yAxisMinAsDataMinAndMaxAsDataMax": false,
+                  "yAxisSplitLineShow": true,
+                  "yAxisSplitAreaShow": false,
+                  "yAxisFormatter": "",
+                  "colorTheme": "custom",
+                  "color": [
+                    "#ee6666",
+                    "#91cc75",
+                    "#5470c6",
+                    "#fac858",
+                    "#73c0de",
+                    "#3ba272",
+                    "#fc8452",
+                    "#9a60b4",
+                    "#ea7ccc"
+                  ],
+                  "dataApi": {
+                    "method": "get",
+                    "url": "/mock/42601/amis-chart/shop/chart7"
+                  },
+                  "labelTextStyle": {
+                    "color": "var(--colors-brand-10)"
+                  },
+                  "legendTextStyle": {
+                    "color": "var(--colors-brand-10)"
+                  },
+                  "height": "150px",
+                  "xAxisLabelStyle": {
+                    "color": "var(--colors-brand-7)",
+                    "fontSize": "10px"
+                  },
+                  "xAxisLineStyle": {
+                    "color": "var(--colors-brand-7)"
+                  },
+                  "yAxisLabelStyle": {
+                    "color": "var(--colors-brand-7)",
+                    "fontSize": "10px"
+                  },
+                  "gridTop": "10px",
+                  "gridBottom": "10px",
+                  "columnBarWidth": 20,
+                  "xAxisLabelRotate": 0,
+                  "gradientStatus": true,
+                  "gradientAlpha": 0.5,
+                  "gradientMode": "top2bottom",
+                  "id": "u:1f3499225048",
+                  "colorBy": "series",
+                  "xAxisSplitLineShow": false,
+                  "xAxisSplitAreaShow": false,
+                  "xAxisLineShow": true,
+                  "axisTickStyle": {
+                    "show": true,
+                    "length": 5,
+                    "color": "#333",
+                    "width": 1
+                  }
+                }
+              ],
+              "size": "xs",
+              "style": {
+                "position": "static",
+                "display": "block",
+                "flex": "1 1 auto",
+                "background-clip": "border-box",
+                "flexGrow": 2,
+                "flexBasis": "auto",
+                "overflowX": "auto"
+              },
+              "wrapperBody": false,
+              "isFixedHeight": false,
+              "isFixedWidth": false,
+              "themeCss": {
+                "baseControlClassName": {
+                  "background:default": "rgba(198,207,216,0.1)",
+                  "border:default": {
+                    "border-image-source": "url(https://reports-1257314765.cos.ap-beijing.myqcloud.com/border-2.png)",
+                    "border-image-slice": "10 16 15 10 fill",
+                    "border-width": "10px 16px 15px 10px",
+                    "border-style": "solid"
+                  }
+                }
+              },
+              "id": "u:a930d926e197"
+            }
+          ],
+          "style": {
+            "position": "relative",
+            "inset": "auto",
+            "flexWrap": "wrap",
+            "flex": "0 0 auto",
+            "justifyContent": "space-around"
+          },
+          "isFixedWidth": false,
+          "id": "u:1c9896b7f286"
+        }
+      ],
+      "themeCss": {
+        "baseControlClassName": {
+          "padding-and-margin:default": {
+            "margin": "0"
+          }
+        }
+      },
+      "id": "u:a413b6eaa54f"
+    }
+  ],
+  "config": {
+    "inputParams": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    },
+    "pageParams": {
+      "type": "object",
+      "required": [],
+      "properties": {}
+    },
+    "enableWatermark": false,
+    "enableFullScreen": false,
+    "pageHistoryVisible": true
+  },
+  "style": {
+    "position": "static",
+    "flex": "1 1 auto",
+    "flexGrow": 1,
+    "flexBasis": "auto",
+    "display": "flex",
+    "flexWrap": "nowrap",
+    "flexDirection": "row",
+    "justifyContent": "center",
+    "min-height": "100vh",
+    "minHeight": "100vh"
+  },
+  "isFixedHeight": false,
+  "isFixedWidth": false,
+  "size": "xs",
+  "wrapperBody": false,
+  "themeCss": {
+    "baseControlClassName": {
+      "background:default": "url(https://reports-1257314765.cos.ap-beijing.myqcloud.com/background-6.png) center center / cover repeat",
+      "padding-and-margin:default": {
+        "paddingTop": "30px"
+      }
+    }
+  },
+  "id": "u:71dd9086595e"
+}
