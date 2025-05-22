@@ -144,7 +144,7 @@ export default inject('store')(
             $schemaUrl={schemaUrl}
             showCustomRenderersPanel={true}
             plugins={[
-              ...reportPlugins, // 报表插件
+              ...reportPlugins // 报表插件
             ]}
             amisEnv={{
               fetcher: store.fetcher,

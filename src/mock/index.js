@@ -524,3 +524,23 @@ Mock.mock('/mock/42601/amis-chart/chart/wordcloud', [
 ]);
 
 Mock.mock('/api/geojson/china', chinaMapData);
+
+Mock.mock('/api/mock/form/initData1', {
+  status: 0,
+  msg: '',
+  data: {
+    name: '测试一下表单缓存',
+    author: 'wibetter',
+    info: '20250516'
+  }
+});
+
+Mock.mock('/api/mock/form/initData2', {
+  status: 0,
+  msg: '',
+  data: {
+    name: '我是表单2',
+    author: 'wibetter',
+    info: '20250516'
+  }
+});

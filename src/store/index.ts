@@ -19,13 +19,108 @@ export const MainStore = types
       },
       {
         id: `${pagIndex}`,
-        path: 'hello-world',
-        label: 'Hello world',
+        path: 'form1',
+        label: '表单页-缓存功能',
         icon: 'fa fa-file',
         schema: {
           type: 'page',
-          title: 'Hello world',
-          body: '初始页面'
+          title: '表单页-缓存功能',
+          body: [
+            {
+              type: 'page',
+              title: '表单页-缓存功能',
+              body: [
+                {
+                  type: 'tabs',
+                  tabs: [
+                    {
+                      title: '选项卡1',
+                      body: [
+                        {
+                          type: 'form',
+                          initApi: '/api/mock/form/initData1',
+                          title: '编辑用户信息',
+                          persistData: 'myForm1',
+                          body: [
+                            {
+                              type: 'input-text',
+                              name: 'name',
+                              label: '姓名',
+                              id: 'u:28f28d398fcc'
+                            },
+                            {
+                              type: 'input-text',
+                              name: 'email',
+                              label: '邮箱',
+                              id: 'u:c107dbb3d362'
+                            }
+                          ],
+                          id: 'u:7a5230cffb1e',
+                          actions: [
+                            {
+                              type: 'submit',
+                              label: '提交',
+                              primary: true,
+                              id: 'u:d9cf978e4639'
+                            }
+                          ],
+                          feat: 'View',
+                          dsType: 'api',
+                          labelAlign: 'left'
+                        }
+                      ],
+                      id: 'u:ff1f9b087f1d'
+                    },
+                    {
+                      title: '选项卡2',
+                      body: [
+                        {
+                          type: 'form',
+                          initApi: '/api/mock/form/initData2',
+                          title: '编辑用户信息',
+                          persistData: 'myForm2',
+                          body: [
+                            {
+                              type: 'input-text',
+                              name: 'name',
+                              label: '姓名',
+                              id: 'u:d49f4ac8cff8'
+                            },
+                            {
+                              type: 'input-text',
+                              name: 'email',
+                              label: '邮箱',
+                              id: 'u:f5ccbf2b6a8b'
+                            }
+                          ],
+                          id: 'u:904c7815d8c2',
+                          actions: [
+                            {
+                              type: 'submit',
+                              label: '提交',
+                              primary: true,
+                              id: 'u:b2d9d11d1233'
+                            }
+                          ],
+                          feat: 'View',
+                          dsType: 'api',
+                          labelAlign: 'left'
+                        }
+                      ],
+                      id: 'u:3bf36c808255'
+                    }
+                  ],
+                  mountOnEnter: true,
+                  id: 'u:1e44084bd635'
+                }
+              ],
+              id: 'u:6638769f899a',
+              asideResizor: false,
+              pullRefresh: {
+                disabled: true
+              }
+            }
+          ]
         }
       }
     ]),
