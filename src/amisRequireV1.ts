@@ -1,19 +1,5 @@
-import { isPlainObject } from 'lodash';
-// 导入需要共享的依赖模块，使用 es module 方式导入
-import * as reactModule from 'react';
-import * as reactDomModule from 'react-dom';
-import * as mobxModule from 'mobx';
-import * as mobxReactModule from 'mobx-react';
-import * as mobxStateTreeModule from 'mobx-state-tree';
-import * as amisModule from 'amis';
-import * as amisUiModule from 'amis-ui';
-import * as amisCoreModule from 'amis-core';
-import * as amisFormulaModule from 'amis-formula';
-import * as amisEditorModule from 'amis-editor';
-import * as amisEditorCoreModule from 'amis-editor-core';
-import * as classnamesModule from 'classnames';
-import * as axiosModule from 'axios';
-import * as qsModule from 'qs';
+import { isPlainObject } from 'lodash'
+
 /**
  * 共享模块类型定义
  */
@@ -36,20 +22,22 @@ declare global {
  * 备注：可在其他模块中通过 amisRequire 中使用，目前主要在自定义组件中使用
  */
 const __amisCommonDepModules = {
-  react: reactModule,
-  'react-dom': reactDomModule,
-  mobx: mobxModule,
-  'mobx-react': mobxReactModule,
-  'mobx-state-tree': mobxStateTreeModule,
-  amis: amisModule,
-  'amis-core': amisCoreModule,
-  'amis-ui': amisUiModule,
-  'amis-formula': amisFormulaModule,
-  'amis-editor': amisEditorModule,
-  'amis-editor-core': amisEditorCoreModule,
-  classnames: classnamesModule,
-  axios: axiosModule,
-  qs: qsModule,
+  react: require('react'),
+  'react-dom': require('react-dom'),
+  mobx: require('mobx'),
+  'mobx-react': require('mobx-react'),
+  'mobx-state-tree': require('mobx-state-tree'),
+  echarts: require('echarts'),
+  axios: require('axios'),
+  classnames: require('classnames'),
+  qs: require('qs'),
+  lodash: require('lodash'),
+  amis: require('amis'),
+  'amis-ui': require('amis-ui'),
+  'amis-core': require('amis-core'),
+  'amis-formula': require('amis-formula'),
+  'amis-editor': require('amis-editor'),
+  'amis-editor-core': require('amis-editor-core'),
 }
 
 /**
