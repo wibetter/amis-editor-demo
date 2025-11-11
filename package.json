@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/aisuda/amis-editor-demo#readme",
   "dependencies": {
+    "@ant-design/icons": "^4.8.0",
     "@fortawesome/fontawesome-free": "^5.15.3",
     "amis": "6.7.0",
     "amis-core": "6.7.0",
@@ -31,6 +32,7 @@
     "amis-formula": "6.7.0",
     "amis-reports": "1.5.13",
     "amis-ui": "6.7.0",
+    "antd": "^4.24.0",
     "axios": "0.21.1",
     "copy-to-clipboard": "^3.2.0",
     "mobx": "4.15.7",

@@ -11,4 +11,8 @@ import H5Preview from './h5-preview.svg';
 registerIcon('pc-preview', PCPreview);
 registerIcon('h5-preview', H5Preview);
 
+// @ts-ignore
+import LinkDebug from './linkDebug.svg';
+registerIcon('linkDebug', LinkDebug);
+
 export {Icon};

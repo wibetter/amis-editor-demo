@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Editor, ShortcutKey} from 'amis-editor';
 // @ts-ignore
 // import reportPlugins from 'amis-reports'; // 报表插件-引入方式1（此引入方式含渲染器）
@@ -10,6 +10,10 @@ import {toast, Select} from 'amis';
 import {currentLocale} from 'i18n-runtime';
 import {Icon} from '../icons/index';
 import {IMainStore} from '../store';
+// 引入 外部链接 管理面板插件
+import LinkDebugPlugin from '../editor/linkDebugPlugin';
+import loadLinkDebugFromStorage from '../utils/loadLinkDebugFromStorage';
+
 import '../editor/DisabledEditorPlugin'; // 用于隐藏一些不需要的Editor预置组件
 import '../renderer/MyRenderer';
 import '../editor/MyRenderer';
@@ -54,6 +58,16 @@ export default inject('store')(
       currentIndex = index;
       store.updateSchema(store.pages[index].schema);
     }
+
+    // 组件挂载时加载外链脚本
+    useEffect(() => {
+      loadLinkDebugFromStorage();
+
+      // 清除副作用
+      return () => {
+        // 当前暂无需要清理的方法
+      };
+    }, []);
 
     function save() {
       store.updatePageSchemaAt(index);
@@ -144,6 +158,7 @@ export default inject('store')(
             $schemaUrl={schemaUrl}
             showCustomRenderersPanel={true}
             plugins={[
+              LinkDebugPlugin,
               ...reportPlugins // 报表插件
             ]}
             amisEnv={{
